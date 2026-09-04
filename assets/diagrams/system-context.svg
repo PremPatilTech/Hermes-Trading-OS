@@ -40,17 +40,17 @@
   <text x="888" y="160" class="text">Safety</text>
   <text x="898" y="183" class="text">Gate</text>
 
-  <rect x="450" y="290" width="200" height="92" class="core" />
-  <text x="482" y="326" class="text">Execution</text>
-  <text x="468" y="350" class="text">Coordinator</text>
+  <rect x="450" y="285" width="200" height="92" class="core" />
+  <text x="482" y="321" class="text">Execution</text>
+  <text x="468" y="345" class="text">Coordinator</text>
 
-  <rect x="770" y="290" width="180" height="92" class="panel" />
-  <text x="805" y="322" class="text">MT5-Compatible</text>
-  <text x="826" y="346" class="text">Adapter</text>
+  <rect x="770" y="285" width="180" height="92" class="panel" />
+  <text x="796" y="317" class="text">MT5-Compatible</text>
+  <text x="826" y="341" class="text">Adapter</text>
 
-  <rect x="150" y="290" width="180" height="92" class="state" />
-  <text x="190" y="322" class="text">Execution</text>
-  <text x="202" y="346" class="text">State</text>
+  <rect x="150" y="285" width="180" height="92" class="state" />
+  <text x="190" y="317" class="text">Execution</text>
+  <text x="202" y="341" class="text">State</text>
 
   <rect x="150" y="410" width="180" height="70" class="state" />
   <text x="188" y="442" class="text">Journal</text>
@@ -64,11 +64,10 @@
   <line x1="400" y1="171" x2="450" y2="171" class="arrow" />
   <line x1="600" y1="171" x2="650" y2="171" class="arrow" />
   <line x1="800" y1="171" x2="850" y2="171" class="arrow" />
-  <path d="M925 212 C925 250 660 250 610 290" class="arrow" />
-  <line x1="650" y1="336" x2="770" y2="336" class="arrow" />
-  <path d="M450 336 C390 336 390 336 330 336" class="arrow" />
-  <path d="M240 382 L240 410" class="arrow" />
-  <path d="M330 445 L450 445" class="arrow" />
-  <path d="M770 360 C705 395 690 410 650 435" class="arrow" />
+  <path d="M925 212 V246 H550 V285" class="arrow" />
+  <line x1="650" y1="331" x2="770" y2="331" class="arrow" />
+  <line x1="450" y1="331" x2="330" y2="331" class="arrow" />
+  <line x1="240" y1="377" x2="240" y2="410" class="arrow" />
+  <line x1="330" y1="445" x2="450" y2="445" class="arrow" />
+  <path d="M860 377 V445 H650" class="arrow" />
 </svg>
-

@@ -32,10 +32,10 @@
   <rect x="620" y="250" width="155" height="46" class="stop" /><text x="638" y="279" class="txt">BROKER_REJECTED</text>
   <rect x="620" y="330" width="105" height="46" class="warn" /><text x="650" y="359" class="txt">UNKNOWN</text>
   <rect x="790" y="330" width="125" height="46" class="warn" /><text x="808" y="359" class="txt">RECONCILING</text>
-  <rect x="760" y="430" width="170" height="46" class="ok" /><text x="778" y="459" class="txt">RECONCILED_EXECUTED</text>
-  <rect x="560" y="430" width="175" height="46" class="stop" /><text x="577" y="459" class="txt">UNKNOWN_NEEDS_REVIEW</text>
+  <rect x="750" y="430" width="185" height="46" class="ok" /><text x="765" y="459" class="txt">RECONCILED_EXECUTED</text>
+  <rect x="535" y="430" width="190" height="46" class="stop" /><text x="550" y="459" class="txt">UNKNOWN_NEEDS_REVIEW</text>
 
-  <rect x="790" y="520" width="145" height="46" class="ok" /><text x="809" y="549" class="txt">OPEN_MONITORING</text>
+  <rect x="770" y="520" width="165" height="46" class="ok" /><text x="786" y="549" class="txt">OPEN_MONITORING</text>
   <rect x="585" y="520" width="130" height="46" class="node" /><text x="608" y="549" class="txt">CLOSED</text>
 
   <line x1="215" y1="148" x2="270" y2="148" class="arrow" />
@@ -47,10 +47,9 @@
   <path d="M678 171 L696 250" class="arrow" />
   <path d="M678 171 L672 330" class="arrow" />
   <line x1="725" y1="353" x2="790" y2="353" class="arrow" />
-  <path d="M850 376 L850 430" class="arrow" />
-  <path d="M820 376 C730 390 682 404 650 430" class="arrow" />
-  <path d="M842 171 L862 520" class="arrow" />
-  <path d="M845 476 L862 520" class="arrow" />
-  <line x1="790" y1="543" x2="715" y2="543" class="arrow" />
+  <line x1="852" y1="376" x2="852" y2="430" class="arrow" />
+  <path d="M812 376 H630 V430" class="arrow" />
+  <path d="M842 171 V520" class="arrow" />
+  <line x1="852" y1="476" x2="852" y2="520" class="arrow" />
+  <line x1="770" y1="543" x2="715" y2="543" class="arrow" />
 </svg>
-
