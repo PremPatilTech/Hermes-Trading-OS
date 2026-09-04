@@ -1,0 +1,17 @@
+{
+  "event_type": "signal.created",
+  "signal_id": "HERMES_GOLD_H1_STRUCTURE_TREND_2026-09-04T16-00Z_SHORT",
+  "instrument_class": "gold_market",
+  "timeframe": "H1",
+  "side": "SELL",
+  "signal_type": "Structure Trend",
+  "confidence": null,
+  "event_time": "2026-09-04T16:00:00Z",
+  "inputs": {
+    "bar_status": "closed",
+    "data_quality": "accepted",
+    "strategy_details": "redacted"
+  },
+  "notice": "Sanitized illustrative event. Not a trading recommendation or performance claim."
+}
+

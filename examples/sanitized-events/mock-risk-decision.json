@@ -1,0 +1,30 @@
+{
+  "event_type": "risk.reviewed",
+  "signal_id": "HERMES_GOLD_H1_STRUCTURE_TREND_2026-09-04T16-00Z_SHORT",
+  "decision": "APPROVED",
+  "risk_policy_version": "public-redacted",
+  "checks": [
+    {
+      "name": "position_size",
+      "status": "passed",
+      "details": "Size is within configured risk boundary."
+    },
+    {
+      "name": "open_position_conflict",
+      "status": "passed",
+      "details": "No conflicting position detected."
+    },
+    {
+      "name": "idempotency",
+      "status": "passed",
+      "details": "Signal ID has not been processed."
+    }
+  ],
+  "redactions": [
+    "exact risk percentage",
+    "broker symbol",
+    "account details",
+    "strategy thresholds"
+  ]
+}
+

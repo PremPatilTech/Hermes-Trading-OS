@@ -1,0 +1,30 @@
+# Runtime and local files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Sensitive/private artifacts
+credentials/
+secrets/
+*.key
+*.pem
+*.p12
+*.sqlite
+*.db
+*.log
+*.jsonl
+
+# Generated files
+reports/
+dist/
+build/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes dashboard wireframe</title>
+  <desc id="desc">Sanitized monitoring dashboard wireframe showing open trade, journal metrics, signal type summary, and event table.</desc>
+  <style>
+    .bg { fill: #f7f7f4; }
+    .card { fill: #fff; stroke: #d2d8d2; stroke-width: 1.2; rx: 8; }
+    .txt { font-family: Arial, Helvetica, sans-serif; fill: #172433; }
+    .h { font-size: 28px; font-weight: 700; }
+    .label { font-size: 13px; fill: #596879; }
+    .value { font-size: 27px; font-weight: 700; }
+    .small { font-size: 14px; }
+    .sell { fill: #b93d3d; font-weight: 700; }
+    .buy { fill: #087b66; font-weight: 700; }
+    .line { stroke: #dde2de; stroke-width: 1; }
+    .bar { fill: #2f6f9f; }
+  </style>
+  <rect class="bg" width="1100" height="620" />
+  <text x="50" y="62" class="txt h">Trade Journal Dashboard</text>
+  <text x="50" y="88" class="txt label">Sanitized wireframe: active controlled forward-testing</text>
+
+  <rect x="50" y="125" width="185" height="90" class="card" />
+  <text x="70" y="158" class="txt label">Journal Rows</text>
+  <text x="70" y="194" class="txt value">42</text>
+
+  <rect x="255" y="125" width="185" height="90" class="card" />
+  <text x="275" y="158" class="txt label">Closed</text>
+  <text x="275" y="194" class="txt value">18</text>
+
+  <rect x="460" y="125" width="185" height="90" class="card" />
+  <text x="480" y="158" class="txt label">100-Trade Progress</text>
+  <text x="480" y="194" class="txt value">42%</text>
+
+  <rect x="665" y="125" width="185" height="90" class="card" />
+  <text x="685" y="158" class="txt label">Avg MFE / MAE</text>
+  <text x="685" y="194" class="txt value">1.3R / 0.5R</text>
+
+  <rect x="870" y="125" width="185" height="90" class="card" />
+  <text x="890" y="158" class="txt label">Risk Blocks</text>
+  <text x="890" y="194" class="txt value">7</text>
+
+  <rect x="50" y="245" width="465" height="150" class="card" />
+  <text x="72" y="280" class="txt" style="font-size:20px;font-weight:700">Open Trade Monitor</text>
+  <text x="72" y="315" class="txt small">Instrument class: gold market</text>
+  <text x="72" y="345" class="txt small">Side: <tspan class="sell">SELL</tspan></text>
+  <text x="72" y="375" class="txt small">Status: OPEN_MONITORING</text>
+  <rect x="285" y="315" width="170" height="14" fill="#dde7ee" rx="7" />
+  <rect x="285" y="315" width="112" height="14" class="bar" rx="7" />
+  <text x="285" y="352" class="txt label">MFE / MAE tracked in R</text>
+
+  <rect x="545" y="245" width="510" height="150" class="card" />
+  <text x="567" y="280" class="txt" style="font-size:20px;font-weight:700">By Signal Type</text>
+  <line x1="567" y1="310" x2="1030" y2="310" class="line" />
+  <text x="570" y="340" class="txt small">Structure Trend</text>
+  <rect x="720" y="328" width="230" height="12" fill="#dde7ee" rx="6" />
+  <rect x="720" y="328" width="145" height="12" class="bar" rx="6" />
+  <text x="970" y="340" class="txt label">sample pending</text>
+  <text x="570" y="372" class="txt small">Breakout</text>
+  <rect x="720" y="360" width="230" height="12" fill="#dde7ee" rx="6" />
+  <rect x="720" y="360" width="78" height="12" class="bar" rx="6" />
+  <text x="970" y="372" class="txt label">sample pending</text>
+
+  <rect x="50" y="425" width="1005" height="145" class="card" />
+  <text x="72" y="460" class="txt" style="font-size:20px;font-weight:700">Journal Events</text>
+  <line x1="72" y1="485" x2="1030" y2="485" class="line" />
+  <text x="75" y="512" class="txt label">TIME</text>
+  <text x="220" y="512" class="txt label">TYPE</text>
+  <text x="390" y="512" class="txt label">SIDE</text>
+  <text x="500" y="512" class="txt label">STATUS</text>
+  <text x="675" y="512" class="txt label">MFE</text>
+  <text x="780" y="512" class="txt label">MAE</text>
+  <text x="895" y="512" class="txt label">RESULT</text>
+  <line x1="72" y1="528" x2="1030" y2="528" class="line" />
+  <text x="75" y="553" class="txt small">sanitized timestamp</text>
+  <text x="220" y="553" class="txt small">Structure Trend</text>
+  <text x="390" y="553" class="txt small sell">SELL</text>
+  <text x="500" y="553" class="txt small">OPEN_MONITORING</text>
+  <text x="675" y="553" class="txt small">0.75R</text>
+  <text x="780" y="553" class="txt small">0.20R</text>
+  <text x="895" y="553" class="txt small">Pending</text>
+</svg>
+

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Trading OS system context</title>
+  <desc id="desc">Sanitized architecture diagram showing market data, decision engine, risk engine, safety gate, execution coordinator, MT5-compatible adapter, state store, journal, and dashboard.</desc>
+  <style>
+    .bg { fill: #f7f7f4; }
+    .panel { fill: #ffffff; stroke: #cfd7d1; stroke-width: 1.4; rx: 10; }
+    .core { fill: #eef6f5; stroke: #4f8f86; stroke-width: 1.7; rx: 10; }
+    .risk { fill: #fff5eb; stroke: #c47c3c; stroke-width: 1.7; rx: 10; }
+    .state { fill: #eef2fb; stroke: #5470a8; stroke-width: 1.7; rx: 10; }
+    .text { font-family: Arial, Helvetica, sans-serif; fill: #182431; font-size: 18px; font-weight: 700; }
+    .small { font-family: Arial, Helvetica, sans-serif; fill: #536273; font-size: 13px; }
+    .arrow { stroke: #54616f; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#54616f" />
+    </marker>
+  </defs>
+  <rect class="bg" width="1100" height="520" />
+  <text x="50" y="54" class="text" style="font-size:28px">Hermes Trading OS</text>
+  <text x="50" y="78" class="small">Public-safe architecture for risk-controlled trading automation</text>
+
+  <rect x="50" y="130" width="150" height="82" class="panel" />
+  <text x="75" y="164" class="text">Market Data</text>
+  <text x="72" y="187" class="small">gold / currency</text>
+
+  <rect x="250" y="130" width="150" height="82" class="core" />
+  <text x="278" y="160" class="text">Feature</text>
+  <text x="282" y="183" class="text">Engine</text>
+
+  <rect x="450" y="130" width="150" height="82" class="core" />
+  <text x="477" y="160" class="text">Decision</text>
+  <text x="488" y="183" class="text">Engine</text>
+
+  <rect x="650" y="130" width="150" height="82" class="risk" />
+  <text x="690" y="160" class="text">Risk</text>
+  <text x="684" y="183" class="text">Engine</text>
+
+  <rect x="850" y="130" width="150" height="82" class="risk" />
+  <text x="888" y="160" class="text">Safety</text>
+  <text x="898" y="183" class="text">Gate</text>
+
+  <rect x="450" y="290" width="200" height="92" class="core" />
+  <text x="482" y="326" class="text">Execution</text>
+  <text x="468" y="350" class="text">Coordinator</text>
+
+  <rect x="770" y="290" width="180" height="92" class="panel" />
+  <text x="805" y="322" class="text">MT5-Compatible</text>
+  <text x="826" y="346" class="text">Adapter</text>
+
+  <rect x="150" y="290" width="180" height="92" class="state" />
+  <text x="190" y="322" class="text">Execution</text>
+  <text x="202" y="346" class="text">State</text>
+
+  <rect x="150" y="410" width="180" height="70" class="state" />
+  <text x="188" y="442" class="text">Journal</text>
+  <text x="185" y="463" class="small">audit + review</text>
+
+  <rect x="450" y="410" width="200" height="70" class="panel" />
+  <text x="491" y="442" class="text">Dashboard</text>
+  <text x="495" y="463" class="small">CSV + HTML reports</text>
+
+  <line x1="200" y1="171" x2="250" y2="171" class="arrow" />
+  <line x1="400" y1="171" x2="450" y2="171" class="arrow" />
+  <line x1="600" y1="171" x2="650" y2="171" class="arrow" />
+  <line x1="800" y1="171" x2="850" y2="171" class="arrow" />
+  <path d="M925 212 C925 250 660 250 610 290" class="arrow" />
+  <line x1="650" y1="336" x2="770" y2="336" class="arrow" />
+  <path d="M450 336 C390 336 390 336 330 336" class="arrow" />
+  <path d="M240 382 L240 410" class="arrow" />
+  <path d="M330 445 L450 445" class="arrow" />
+  <path d="M770 360 C705 395 690 410 650 435" class="arrow" />
+</svg>
+

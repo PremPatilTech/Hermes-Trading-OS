@@ -1,0 +1,15 @@
+{
+  "event_type": "execution.audit",
+  "signal_id": "HERMES_GOLD_H1_STRUCTURE_TREND_2026-09-04T16-00Z_SHORT",
+  "stage": "safety_gate",
+  "decision": "passed",
+  "created_at": "2026-09-04T16:01:02Z",
+  "checks": {
+    "instrument_allowed": true,
+    "volume_allowed": true,
+    "state_clean": true,
+    "kill_switch_clear": true
+  },
+  "private_fields_removed": true
+}
+

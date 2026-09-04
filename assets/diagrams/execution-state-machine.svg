@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes execution state machine</title>
+  <desc id="desc">Sanitized state machine showing validation, execution, rejection, reconciliation, monitoring, and closure states.</desc>
+  <style>
+    .bg { fill: #f7f7f4; }
+    .node { fill: #fff; stroke: #cfd7d1; stroke-width: 1.4; rx: 8; }
+    .ok { fill: #eef6f5; stroke: #4f8f86; stroke-width: 1.6; rx: 8; }
+    .warn { fill: #fff5eb; stroke: #c47c3c; stroke-width: 1.6; rx: 8; }
+    .stop { fill: #fff1f1; stroke: #b85656; stroke-width: 1.6; rx: 8; }
+    .txt { font-family: Arial, Helvetica, sans-serif; fill: #182431; font-size: 14px; font-weight: 700; }
+    .title { font-family: Arial, Helvetica, sans-serif; fill: #182431; font-size: 26px; font-weight: 700; }
+    .sub { font-family: Arial, Helvetica, sans-serif; fill: #536273; font-size: 13px; }
+    .arrow { stroke: #54616f; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#54616f" />
+    </marker>
+  </defs>
+  <rect class="bg" width="980" height="620" />
+  <text x="48" y="50" class="title">Execution Lifecycle</text>
+  <text x="48" y="74" class="sub">Unknown states fail closed and require reconciliation before any retry.</text>
+
+  <rect x="70" y="125" width="145" height="46" class="node" /><text x="88" y="154" class="txt">SIGNAL_CREATED</text>
+  <rect x="270" y="125" width="125" height="46" class="node" /><text x="294" y="154" class="txt">VALIDATING</text>
+  <rect x="450" y="125" width="115" height="46" class="ok" /><text x="477" y="154" class="txt">APPROVED</text>
+  <rect x="620" y="125" width="115" height="46" class="warn" /><text x="645" y="154" class="txt">EXECUTING</text>
+  <rect x="790" y="125" width="105" height="46" class="ok" /><text x="816" y="154" class="txt">EXECUTED</text>
+
+  <rect x="270" y="230" width="145" height="46" class="stop" /><text x="289" y="259" class="txt">RISK_REJECTED</text>
+  <rect x="270" y="300" width="155" height="46" class="stop" /><text x="287" y="329" class="txt">SAFETY_REJECTED</text>
+  <rect x="620" y="250" width="155" height="46" class="stop" /><text x="638" y="279" class="txt">BROKER_REJECTED</text>
+  <rect x="620" y="330" width="105" height="46" class="warn" /><text x="650" y="359" class="txt">UNKNOWN</text>
+  <rect x="790" y="330" width="125" height="46" class="warn" /><text x="808" y="359" class="txt">RECONCILING</text>
+  <rect x="760" y="430" width="170" height="46" class="ok" /><text x="778" y="459" class="txt">RECONCILED_EXECUTED</text>
+  <rect x="560" y="430" width="175" height="46" class="stop" /><text x="577" y="459" class="txt">UNKNOWN_NEEDS_REVIEW</text>
+
+  <rect x="790" y="520" width="145" height="46" class="ok" /><text x="809" y="549" class="txt">OPEN_MONITORING</text>
+  <rect x="585" y="520" width="130" height="46" class="node" /><text x="608" y="549" class="txt">CLOSED</text>
+
+  <line x1="215" y1="148" x2="270" y2="148" class="arrow" />
+  <line x1="395" y1="148" x2="450" y2="148" class="arrow" />
+  <line x1="565" y1="148" x2="620" y2="148" class="arrow" />
+  <line x1="735" y1="148" x2="790" y2="148" class="arrow" />
+  <path d="M332 171 L332 230" class="arrow" />
+  <path d="M350 171 L350 300" class="arrow" />
+  <path d="M678 171 L696 250" class="arrow" />
+  <path d="M678 171 L672 330" class="arrow" />
+  <line x1="725" y1="353" x2="790" y2="353" class="arrow" />
+  <path d="M850 376 L850 430" class="arrow" />
+  <path d="M820 376 C730 390 682 404 650 430" class="arrow" />
+  <path d="M842 171 L862 520" class="arrow" />
+  <path d="M845 476 L862 520" class="arrow" />
+  <line x1="790" y1="543" x2="715" y2="543" class="arrow" />
+</svg>
+

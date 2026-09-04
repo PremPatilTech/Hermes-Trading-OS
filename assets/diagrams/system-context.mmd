@@ -1,0 +1,15 @@
+flowchart LR
+    A[Market Data] --> B[Feature Engine]
+    B --> C[Decision Engine]
+    C --> D[Signal Normalizer]
+    D --> E[Risk Engine]
+    E --> F[Safety Gate]
+    F --> G[Execution Coordinator]
+    G --> H[MT5-Compatible Adapter]
+    G --> I[(Execution State)]
+    G --> J[(Trade Journal)]
+    H --> K[Execution Interface]
+    K --> L[Broker Response]
+    L --> G
+    J --> M[Dashboard + CSV]
+
